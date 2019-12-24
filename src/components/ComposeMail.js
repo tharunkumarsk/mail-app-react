@@ -37,15 +37,20 @@ export class ComposeMail extends React.Component {
     var re = new RegExp("@tcs.com");
     return re.test(String(email).toLowerCase());
   }
-
-  submitValidation() {
+generateId(){
+  return Math.random()
+}
+  handleOnSubmit() {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
-      this.handleOnSubmit(this.state);
+      this.submitValidation(this.state);
     } else {
     }
   }
 
-  handleOnSubmit(composeData) {
+  submitValidation(composeData) {
+    composeData.from = "user@tcs.com"
+    composeData.id = this.generateId()
+    this.setState({id:this.generateId()})
     this.props.storeSentMail(composeData);
     if (this.props.compose.data.id) {
       console.log("delete draft");
@@ -78,15 +83,24 @@ export class ComposeMail extends React.Component {
         <div className="blur_background" />
         <div className="popup_inner">
           <div className="composemail">
-            <form autocomplete="off">
-              <div></div>
+            <form autoComplete="off">
+              <div> 
+                <input
+                  type="to"
+                  id="to"
+                  name="to"
+                  placeholder="to.."
+                  onChange={this.handleOnChange}
+                  value={this.state.to}
+                />
+                </div>
               <br />
               <div>
                 <input
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Subject.."
+                  placeholder="subject.."
                   onChange={this.handleOnChange}
                   value={this.state.subject}
                 />
@@ -109,6 +123,7 @@ export class ComposeMail extends React.Component {
                 <button
                   type="submit"
                   className="btn-success pull-right composebtn"
+                  onClick = {this.handleOnSubmit}
                 >
                   Send
                 </button>

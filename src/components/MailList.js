@@ -196,6 +196,7 @@ export class MailList extends React.Component {
 
       data = this.props.inboxData;
     } else if (this.props.display == "sent") {
+      debugger
       results = this.props.sent.data;
       data = this.state.mailData;
     } else if (this.props.display == "draft") {

@@ -1,179 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" hostname="localhost" tests="9" failures="9" time="3.179" timestamp="2019-12-24T17:20:49">
-    <properties>
-    </properties>
-    <testcase classname="Testing folder component with store store" name="+++ check Prop matches with initialState" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}[39m
-Received:
-  [31m{&quot;compose&quot;: {&quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
-
-Difference:
-
-[32m- Expected[39m
-[31m+ Received[39m
-
-[2m Object {[22m
-[32m-  &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
-[32m-  &quot;id&quot;: 1,[39m
-[32m-  &quot;subject&quot;: &quot;&quot;,[39m
-[32m-  &quot;time&quot;: &quot;&quot;,[39m
-[32m-  &quot;to&quot;: &quot;&quot;,[39m
-[31m+  &quot;compose&quot;: Object {[39m
-[31m+    &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
-[31m+    &quot;id&quot;: 1,[39m
-[31m+    &quot;subject&quot;: &quot;&quot;,[39m
-[31m+    &quot;time&quot;: &quot;&quot;,[39m
-[31m+    &quot;to&quot;: &quot;&quot;,[39m
-[31m+  },[39m
-[2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:30:43)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="Testing folder component with store store" name="+++ check action on dispatching " time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m)[22m
-
-Expected value to be (using ===):
-  [32m&quot;STORE_SENT_MAIL&quot;[39m
-Received:
-  [31m&quot;&quot;[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:50:32)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="ComposeMail Component" name="Number of input boxes" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toHaveLength([22m[32mlength[39m[2m)[22m
-
-Expected value to have length:
-  [32m2[39m
-Received:
-  [31m{&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 1, &quot;node&quot;: &lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;, &quot;nodes&quot;: [&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;], &quot;options&quot;: {}, &quot;renderer&quot;: null, &quot;root&quot;: {&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 1, &quot;node&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;nodes&quot;: [&lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;], &quot;options&quot;: {}, &quot;renderer&quot;: {&quot;_instance&quot;: {&quot;_calledComponentWillUnmount&quot;: false, &quot;_compositeType&quot;: 0, &quot;_context&quot;: {}, &quot;_currentElement&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;, &quot;_debugID&quot;: 5, &quot;_hostContainerInfo&quot;: null, &quot;_hostParent&quot;: null, &quot;_instance&quot;: {&quot;_reactInternalInstance&quot;: [Circular], &quot;context&quot;: {}, &quot;handleOnChange&quot;: [Function bound handleOnChange], &quot;handleOnSave&quot;: [Function bound handleOnSave], &quot;handleOnSubmit&quot;: [Function bound handleOnSubmit], &quot;props&quot;: {&quot;deleteDraftMail&quot;: [Function mockConstructor], &quot;storeDraftMail&quot;: [Function mockConstructor], &quot;storeSentMail&quot;: [Function mockConstructor]}, &quot;refs&quot;: {}, &quot;state&quot;: {&quot;body&quot;: &quot;&quot;, &quot;error&quot;: false, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;, &quot;valid&quot;: false}, &quot;updater&quot;: {&quot;enqueueCallback&quot;: [Function enqueueCallback], &quot;enqueueCallbackInternal&quot;: [Function enqueueCallbackInternal], &quot;enqueueElementInternal&quot;: [Function enqueueElementInternal], &quot;enqueueForceUpdate&quot;: [Function enqueueForceUpdate], &quot;enqueueReplaceState&quot;: [Function enqueueReplaceState], &quot;enqueueSetState&quot;: [Function enqueueSetState], &quot;isMounted&quot;: [Function isMounted], &quot;validateCallback&quot;: [Function validateCallback]}}, &quot;_mountOrder&quot;: 3, &quot;_pendingCallbacks&quot;: null, &quot;_pendingElement&quot;: null, &quot;_pendingForceUpdate&quot;: false, &quot;_pendingReplaceState&quot;: false, &quot;_pendingStateQueue&quot;: null, &quot;_renderedComponent&quot;: {&quot;_currentElement&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;_debugID&quot;: 6, &quot;_renderedOutput&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;}, &quot;_renderedNodeType&quot;: 0, &quot;_rootNodeID&quot;: 0, &quot;_topLevelWrapper&quot;: null, &quot;_updateBatchNumber&quot;: null, &quot;_warnedAboutRefsInRender&quot;: false}, &quot;getRenderOutput&quot;: [Function getRenderOutput], &quot;render&quot;: [Function render]}, &quot;root&quot;: [Circular], &quot;unrendered&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;}, &quot;unrendered&quot;: null}[39m
-received.length:
-  [31m1[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:71:39)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="ComposeMail Component" name="Checking Text area" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toHaveLength([22m[32mlength[39m[2m)[22m
-
-Expected value to have length:
-  [32m1[39m
-Received:
-  [31m{&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 0, &quot;node&quot;: undefined, &quot;nodes&quot;: Array [], &quot;options&quot;: {}, &quot;renderer&quot;: null, &quot;root&quot;: {&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 1, &quot;node&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;nodes&quot;: [&lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;], &quot;options&quot;: {}, &quot;renderer&quot;: {&quot;_instance&quot;: {&quot;_calledComponentWillUnmount&quot;: false, &quot;_compositeType&quot;: 0, &quot;_context&quot;: {}, &quot;_currentElement&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;, &quot;_debugID&quot;: 7, &quot;_hostContainerInfo&quot;: null, &quot;_hostParent&quot;: null, &quot;_instance&quot;: {&quot;_reactInternalInstance&quot;: [Circular], &quot;context&quot;: {}, &quot;handleOnChange&quot;: [Function bound handleOnChange], &quot;handleOnSave&quot;: [Function bound handleOnSave], &quot;handleOnSubmit&quot;: [Function bound handleOnSubmit], &quot;props&quot;: {&quot;deleteDraftMail&quot;: [Function mockConstructor], &quot;storeDraftMail&quot;: [Function mockConstructor], &quot;storeSentMail&quot;: [Function mockConstructor]}, &quot;refs&quot;: {}, &quot;state&quot;: {&quot;body&quot;: &quot;&quot;, &quot;error&quot;: false, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;, &quot;valid&quot;: false}, &quot;updater&quot;: {&quot;enqueueCallback&quot;: [Function enqueueCallback], &quot;enqueueCallbackInternal&quot;: [Function enqueueCallbackInternal], &quot;enqueueElementInternal&quot;: [Function enqueueElementInternal], &quot;enqueueForceUpdate&quot;: [Function enqueueForceUpdate], &quot;enqueueReplaceState&quot;: [Function enqueueReplaceState], &quot;enqueueSetState&quot;: [Function enqueueSetState], &quot;isMounted&quot;: [Function isMounted], &quot;validateCallback&quot;: [Function validateCallback]}}, &quot;_mountOrder&quot;: 4, &quot;_pendingCallbacks&quot;: null, &quot;_pendingElement&quot;: null, &quot;_pendingForceUpdate&quot;: false, &quot;_pendingReplaceState&quot;: false, &quot;_pendingStateQueue&quot;: null, &quot;_renderedComponent&quot;: {&quot;_currentElement&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;_debugID&quot;: 8, &quot;_renderedOutput&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autocomplete=&quot;off&quot;&gt;&lt;div /&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;Subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;}, &quot;_renderedNodeType&quot;: 0, &quot;_rootNodeID&quot;: 0, &quot;_topLevelWrapper&quot;: null, &quot;_updateBatchNumber&quot;: null, &quot;_warnedAboutRefsInRender&quot;: false}, &quot;getRenderOutput&quot;: [Function getRenderOutput], &quot;render&quot;: [Function render]}, &quot;root&quot;: [Circular], &quot;unrendered&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;}, &quot;unrendered&quot;: null}[39m
-received.length:
-  [31m0[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:75:42)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="ComposeMail Component" name="click compose button" time="0">
-      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
-
-Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:82:21)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="simulate click event on onSubmit" name="submit click event" time="0">
-      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
-
-Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:104:21)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="simulate click event on onSubmit" name="submit check error message" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32mtrue[39m
-Received:
-  [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:117:49)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="simulate click event on onSubmit" name="submit check valid state" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32mfalse[39m
-Received:
-  [31mtrue[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:132:39)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="simulate click event on onSubmit" name="email validation" time="0">
-      <failure message="TypeError: Cannot read property &apos;test&apos; of undefined
-    at ComposeMail.validateEmail (/Users/Tharun/Documents/GitHub/mail-app-react/src/components/ComposeMail.js:38:15)
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js:145:35)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="1" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" hostname="localhost" tests="7" failures="6" time="0.147" timestamp="2019-12-24T17:20:53">
+  <testsuite id="0" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js" hostname="localhost" tests="7" failures="6" time="5.999" timestamp="2019-12-24T22:44:14">
     <properties>
     </properties>
     <testcase classname="Testing mail component with store store" name="+++ render the connected(SMART) component" time="0">
@@ -185,28 +12,26 @@ Expected value to be (using ===):
   [32m&quot;STORE_COMPOSE_MAIL&quot;[39m
 Received:
   [31m&quot;&quot;[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:33:32)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:33:32)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="without store" name="submit click event" time="0">
       <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
 
 Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:61:21)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:61:21)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="without store" name="date convertion" time="0">
@@ -227,14 +52,13 @@ Difference:
 [32m-  &quot;time&quot;: &quot;6:25:43 PM&quot;,[39m
 [32m-}[39m
 [31m+Object {}[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:88:54)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:88:54)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="without store" name="check enable edit button" time="0">
@@ -244,14 +68,13 @@ Expected value to equal:
   [32mtrue[39m
 Received:
   [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:113:9)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:113:9)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="without store" name="check empty mails" time="0">
@@ -259,14 +82,13 @@ Received:
 
 Expected value to be truthy, instead received
   [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:144:9)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:144:9)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="without store" name="check mail strucure" time="0">
@@ -274,31 +96,106 @@ Expected value to be truthy, instead received
 
 Expected value to be truthy, instead received
   [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:172:9)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Mail.spec.js:172:9)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="2" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" hostname="localhost" tests="3" failures="1" time="0.092" timestamp="2019-12-24T17:20:53">
+  <testsuite id="1" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js" hostname="localhost" tests="14" failures="5" time="7.009" timestamp="2019-12-24T22:44:14">
     <properties>
     </properties>
-    <testcase classname="data reducers" name="returns proper initial state" time="0">
+    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
     </testcase>
-    <testcase classname="data reducers" name="RECEIVE_API_DATA" time="0">
+    <testcase classname="Testing folder component with store store" name="+++ check action on dispatching " time="0">
     </testcase>
-    <testcase classname="data reducers" name="DELETE_INBOX_MAIL" time="0">
+    <testcase classname="without store" name="testing the rendering structure" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toBeTruthy([22m[2m)[22m
+
+Expected value to be truthy, instead received
+  [31mfalse[39m
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js:119:165)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="without store" name="testing delete button" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;id&quot;: 2}]}[39m
+  [32mtrue[39m
+Received:
+  [31mfalse[39m
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js:125:61)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="without store" name="testing pagination" time="0">
+    </testcase>
+    <testcase classname="without store" name="testing search" time="0">
+    </testcase>
+    <testcase classname="without store" name="testing sort" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m&quot;sometwo@nowhere.comDeleteold1/2/2018&quot;[39m
+Received:
+  [31m&quot;someone@nowhere.comDelete&quot;[39m
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js:214:3)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="without store" name="simulate delete button click" time="0">
+    </testcase>
+    <testcase classname="without store" name="simulate search text change" time="0">
+    </testcase>
+    <testcase classname="without store" name="simulate dropdown change" time="0">
+    </testcase>
+    <testcase classname="without store" name="simulate next button" time="0">
+    </testcase>
+    <testcase classname="without store" name="simulate prev button" time="0">
+    </testcase>
+    <testcase classname="without store" name="active mail state check " time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m3[39m
+Received:
+  [31m0[39m
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js:368:38)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="without store" name="time convertion check " time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;date&quot;: &quot;2/22/2018&quot;, &quot;time&quot;: &quot;11:55:43 PM&quot;}[39m
 Received:
   [31m{}[39m
 
@@ -308,27 +205,69 @@ Difference:
 [31m+ Received[39m
 
 [32m-Object {[39m
-[32m-  &quot;data&quot;: Array [[39m
-[32m-    Object {[39m
-[32m-      &quot;id&quot;: 2,[39m
-[32m-    },[39m
-[32m-  ],[39m
+[32m-  &quot;date&quot;: &quot;2/22/2018&quot;,[39m
+[32m-  &quot;time&quot;: &quot;11:55:43 PM&quot;,[39m
 [32m-}[39m
 [31m+Object {}[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js:26:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/MailList.spec.js:374:16)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="3" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" hostname="localhost" tests="4" failures="2" time="0.036" timestamp="2019-12-24T17:20:53">
+  <testsuite id="2" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/compose.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/compose.spec.js" hostname="localhost" tests="2" failures="2" time="0.151" timestamp="2019-12-24T22:44:21">
+    <properties>
+    </properties>
+    <testcase classname="compose reducers" name="returns proper initial state" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;data&quot;: {&quot;body&quot;: &quot;&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
+Received:
+  [31mnull[39m
+
+Difference:
+
+  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/compose.spec.js:18:51)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="compose reducers" name="STORE_COMPOSE_MAIL" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;data&quot;: [&quot;sample quote 2&quot;, &quot;sample quote 3&quot;]}[39m
+Received:
+  [31mnull[39m
+
+Difference:
+
+  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/compose.spec.js:27:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="3" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/trash.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/trash.spec.js" hostname="localhost" tests="4" failures="2" time="0.19" timestamp="2019-12-24T22:44:21">
     <properties>
     </properties>
     <testcase classname="sent reducers" name="returns proper initial state" time="0">
@@ -367,14 +306,13 @@ Difference:
 [32m-  &quot;id&quot;: 3002,[39m
 [31m+  &quot;id&quot;: 3001,[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:46:3)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/trash.spec.js:46:3)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="sent reducers" name="RESTORE_TRASH_MAIL" time="0">
@@ -399,20 +337,19 @@ Difference:
 [32m-  &quot;id&quot;: 3002,[39m
 [31m+  &quot;id&quot;: 3001,[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:78:3)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/trash.spec.js:78:3)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="4" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" hostname="localhost" tests="4" failures="4" time="0.031" timestamp="2019-12-24T17:20:53">
+  <testsuite id="4" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js" hostname="localhost" tests="4" failures="4" time="0.117" timestamp="2019-12-24T22:44:21">
     <properties>
     </properties>
     <testcase classname="draft reducers" name="READ_DRAFT_MAIL" time="0">
@@ -426,21 +363,20 @@ Received:
 Difference:
 
   Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js:24:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js:24:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="draft reducers" name="STORE_DRAFT_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2002}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 22:44:21 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2002}[39m
 Received:
   [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2001}[39m
 
@@ -460,21 +396,20 @@ Difference:
 [32m-      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
 [32m-      &quot;id&quot;: 2001,[39m
 [32m-      &quot;subject&quot;: &quot;Draft mail&quot;,[39m
-[32m-      &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;,[39m
+[32m-      &quot;time&quot;: &quot;Tue, 24 Dec 2019 22:44:21 GMT&quot;,[39m
 [32m-      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
 [32m-    },[39m
 [2m   ],[22m
 [32m-  &quot;id&quot;: 2002,[39m
 [31m+  &quot;id&quot;: 2001,[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js:41:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js:41:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="draft reducers" name="DELETE_DRAFT_MAIL" time="0">
@@ -499,21 +434,20 @@ Difference:
 [32m-  &quot;id&quot;: 2002,[39m
 [31m+  &quot;id&quot;: 2001,[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js:70:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js:70:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <testcase classname="draft reducers" name="RESTORE_DRAFT_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2002, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2003}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2002, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 22:44:21 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2003}[39m
 Received:
   [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2001}[39m
 
@@ -533,27 +467,26 @@ Difference:
 [32m-      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
 [32m-      &quot;id&quot;: 2002,[39m
 [32m-      &quot;subject&quot;: &quot;Draft mail&quot;,[39m
-[32m-      &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;,[39m
+[32m-      &quot;time&quot;: &quot;Tue, 24 Dec 2019 22:44:21 GMT&quot;,[39m
 [32m-      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
 [32m-    },[39m
 [2m   ],[22m
 [32m-  &quot;id&quot;: 2003,[39m
 [31m+  &quot;id&quot;: 2001,[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js:99:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/draft.spec.js:99:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="5" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" hostname="localhost" tests="2" failures="1" time="0.058" timestamp="2019-12-24T17:20:53">
+  <testsuite id="5" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/inboxMail.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/inboxMail.spec.js" hostname="localhost" tests="2" failures="1" time="0.097" timestamp="2019-12-24T22:44:21">
     <properties>
     </properties>
     <testcase classname="sent reducers" name="returns proper initial state" time="0">
@@ -589,349 +522,152 @@ Difference:
 [2m   &quot;subject&quot;: &quot;some mail&quot;,[22m
 [2m   &quot;time&quot;: &quot;&quot;,[22m
 [2m   &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js:38:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/inboxMail.spec.js:38:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="6" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" hostname="localhost" tests="2" failures="2" time="0.031" timestamp="2019-12-24T17:20:53">
+  <testsuite id="6" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js" hostname="localhost" tests="9" failures="6" time="8.765" timestamp="2019-12-24T22:44:14">
     <properties>
     </properties>
-    <testcase classname="sent reducers" name="STORE_SENT_MAIL" time="0">
+    <testcase classname="Testing folder component with store store" name="+++ check Prop matches with initialState" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
+  [32m{&quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}[39m
 Received:
-  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1001}[39m
+  [31m{&quot;compose&quot;: {&quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
 
 Difference:
 
 [32m- Expected[39m
 [31m+ Received[39m
 
-[33m@@ -6,16 +6,8 @@
-[39m[2m       &quot;id&quot;: 1000,[22m
-[2m       &quot;subject&quot;: &quot;This is a sent mail&quot;,[22m
-[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
-[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-[2m     },[22m
-[32m-    Object {[39m
-[32m-      &quot;body&quot;: &quot;Hi to u&quot;,[39m
-[32m-      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
-[32m-      &quot;id&quot;: 1001,[39m
-[32m-      &quot;subject&quot;: &quot;some mail&quot;,[39m
-[32m-      &quot;time&quot;: &quot;Tue, 24 Dec 2019 17:20:53 GMT&quot;,[39m
-[32m-      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
-[32m-    },[39m
-[2m   ],[22m
-[32m-  &quot;id&quot;: 1002,[39m
-[31m+  &quot;id&quot;: 1001,[39m
+[2m Object {[22m
+[32m-  &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[32m-  &quot;id&quot;: 1,[39m
+[32m-  &quot;subject&quot;: &quot;&quot;,[39m
+[32m-  &quot;time&quot;: &quot;&quot;,[39m
+[32m-  &quot;to&quot;: &quot;&quot;,[39m
+[31m+  &quot;compose&quot;: Object {[39m
+[31m+    &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[31m+    &quot;id&quot;: 1,[39m
+[31m+    &quot;subject&quot;: &quot;&quot;,[39m
+[31m+    &quot;time&quot;: &quot;&quot;,[39m
+[31m+    &quot;to&quot;: &quot;&quot;,[39m
+[31m+  },[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js:35:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:30:43)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
-    </testcase>
-    <testcase classname="sent reducers" name="DELETE_SENT_MAIL" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
-Received:
-  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1001}[39m
-
-Difference:
-
-[32m- Expected[39m
-[31m+ Received[39m
-
-[33m@@ -7,7 +7,7 @@
-[39m[2m       &quot;subject&quot;: &quot;This is a sent mail&quot;,[22m
-[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
-[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-[2m     },[22m
-[2m   ],[22m
-[32m-  &quot;id&quot;: 1002,[39m
-[31m+  &quot;id&quot;: 1001,[39m
-[2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js:65:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="7" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" hostname="localhost" tests="2" failures="2" time="0.041" timestamp="2019-12-24T17:20:53">
-    <properties>
-    </properties>
-    <testcase classname="compose reducers" name="returns proper initial state" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;data&quot;: {&quot;body&quot;: &quot;&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
-Received:
-  [31mnull[39m
-
-Difference:
-
-  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:18:51)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="compose reducers" name="STORE_COMPOSE_MAIL" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;data&quot;: [&quot;sample quote 2&quot;, &quot;sample quote 3&quot;]}[39m
-Received:
-  [31mnull[39m
-
-Difference:
-
-  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:27:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="8" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" hostname="localhost" tests="3" failures="2" time="4.963" timestamp="2019-12-24T17:20:49">
-    <properties>
-    </properties>
-    <testcase classname="Folders Component" name="Number of NavLink" time="0">
-      <failure message="TypeError: this.props.receiveApiData is not a function
-    at Folders.componentWillMount (/Users/Tharun/Documents/GitHub/mail-app-react/src/components/Folders.js:13:16)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:345:23
-    at measureLifeCyclePerf (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:73:12)
-    at ShallowComponentWrapper.performInitialMount (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:344:9)
-    at ShallowComponentWrapper.mountComponent (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:255:21)
-    at Object.mountComponent (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactReconciler.js:43:35)
-    at ReactShallowRenderer._render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:136:23)
-    at _batchedRender (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:83:12)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:58:14)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
-    at ReactShallowRenderer.render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:110:18)
-    at ReactShallowRenderer.render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/react-compat.js:171:37)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:128:26
-    at ReactDefaultBatchingStrategyTransaction.perform (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/Transaction.js:141:20)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:60:26)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
-    at ReactShallowRenderer.unstable_batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:128:25)
-    at performBatchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:103:21)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:127:9
-    at withSetStateAllowed (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/Utils.js:284:3)
-    at new ShallowWrapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:126:38)
-    at shallow (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/shallow.js:19:10)
-    at Object.beforeEach (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:15:35)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:38:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-      <failure message="TypeError: Cannot read property &apos;find&apos; of undefined
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:19:20)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="Folders Component" name="click compose button" time="0">
-      <failure message="TypeError: this.props.receiveApiData is not a function
-    at Folders.componentWillMount (/Users/Tharun/Documents/GitHub/mail-app-react/src/components/Folders.js:13:16)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:345:23
-    at measureLifeCyclePerf (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:73:12)
-    at ShallowComponentWrapper.performInitialMount (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:344:9)
-    at ShallowComponentWrapper.mountComponent (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:255:21)
-    at Object.mountComponent (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactReconciler.js:43:35)
-    at ReactShallowRenderer._render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:136:23)
-    at _batchedRender (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:83:12)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:58:14)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
-    at ReactShallowRenderer.render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:110:18)
-    at ReactShallowRenderer.render (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/react-compat.js:171:37)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:128:26
-    at ReactDefaultBatchingStrategyTransaction.perform (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/Transaction.js:141:20)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:60:26)
-    at Object.batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
-    at ReactShallowRenderer.unstable_batchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:128:25)
-    at performBatchedUpdates (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:103:21)
-    at /Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:127:9
-    at withSetStateAllowed (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/Utils.js:284:3)
-    at new ShallowWrapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:126:38)
-    at shallow (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/enzyme/build/shallow.js:19:10)
-    at Object.beforeEach (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:15:35)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:38:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-      <failure message="TypeError: Cannot read property &apos;find&apos; of undefined
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:24:32)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="9" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" hostname="localhost" tests="14" failures="6" time="5.063" timestamp="2019-12-24T17:20:49">
-    <properties>
-    </properties>
-    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
     </testcase>
     <testcase classname="Testing folder component with store store" name="+++ check action on dispatching " time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m)[22m
+    </testcase>
+    <testcase classname="ComposeMail Component" name="Number of input boxes" time="0">
+    </testcase>
+    <testcase classname="ComposeMail Component" name="Checking Text area" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toHaveLength([22m[32mlength[39m[2m)[22m
 
-Expected value to be (using ===):
-  [32m&quot;READ_SENT_MAIL&quot;[39m
+Expected value to have length:
+  [32m1[39m
 Received:
-  [31m&quot;&quot;[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:61:26)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+  [31m{&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 0, &quot;node&quot;: undefined, &quot;nodes&quot;: Array [], &quot;options&quot;: {}, &quot;renderer&quot;: null, &quot;root&quot;: {&quot;complexSelector&quot;: {&quot;buildPredicate&quot;: [Function buildPredicate], &quot;childrenOfNode&quot;: [Function childrenOfNode], &quot;findWhereUnwrapped&quot;: [Function findWhereUnwrapped]}, &quot;length&quot;: 1, &quot;node&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autoComplete=&quot;off&quot;&gt;&lt;div&gt;&lt;input id=&quot;to&quot; name=&quot;to&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;to..&quot; type=&quot;to&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; onClick={[Function bound handleOnSubmit]} type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;nodes&quot;: [&lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autoComplete=&quot;off&quot;&gt;&lt;div&gt;&lt;input id=&quot;to&quot; name=&quot;to&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;to..&quot; type=&quot;to&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; onClick={[Function bound handleOnSubmit]} type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;], &quot;options&quot;: {}, &quot;renderer&quot;: {&quot;_instance&quot;: {&quot;_calledComponentWillUnmount&quot;: false, &quot;_compositeType&quot;: 0, &quot;_context&quot;: {}, &quot;_currentElement&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;, &quot;_debugID&quot;: 7, &quot;_hostContainerInfo&quot;: null, &quot;_hostParent&quot;: null, &quot;_instance&quot;: {&quot;_reactInternalInstance&quot;: [Circular], &quot;context&quot;: {}, &quot;handleOnChange&quot;: [Function bound handleOnChange], &quot;handleOnSave&quot;: [Function bound handleOnSave], &quot;handleOnSubmit&quot;: [Function bound handleOnSubmit], &quot;props&quot;: {&quot;deleteDraftMail&quot;: [Function mockConstructor], &quot;storeDraftMail&quot;: [Function mockConstructor], &quot;storeSentMail&quot;: [Function mockConstructor]}, &quot;refs&quot;: {}, &quot;state&quot;: {&quot;body&quot;: &quot;&quot;, &quot;error&quot;: false, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;, &quot;valid&quot;: false}, &quot;updater&quot;: {&quot;enqueueCallback&quot;: [Function enqueueCallback], &quot;enqueueCallbackInternal&quot;: [Function enqueueCallbackInternal], &quot;enqueueElementInternal&quot;: [Function enqueueElementInternal], &quot;enqueueForceUpdate&quot;: [Function enqueueForceUpdate], &quot;enqueueReplaceState&quot;: [Function enqueueReplaceState], &quot;enqueueSetState&quot;: [Function enqueueSetState], &quot;isMounted&quot;: [Function isMounted], &quot;validateCallback&quot;: [Function validateCallback]}}, &quot;_mountOrder&quot;: 4, &quot;_pendingCallbacks&quot;: null, &quot;_pendingElement&quot;: null, &quot;_pendingForceUpdate&quot;: false, &quot;_pendingReplaceState&quot;: false, &quot;_pendingStateQueue&quot;: null, &quot;_renderedComponent&quot;: {&quot;_currentElement&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autoComplete=&quot;off&quot;&gt;&lt;div&gt;&lt;input id=&quot;to&quot; name=&quot;to&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;to..&quot; type=&quot;to&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; onClick={[Function bound handleOnSubmit]} type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;, &quot;_debugID&quot;: 8, &quot;_renderedOutput&quot;: &lt;div&gt;&lt;div className=&quot;blur_background&quot; /&gt;&lt;div className=&quot;popup_inner&quot;&gt;&lt;div className=&quot;composemail&quot;&gt;&lt;form autoComplete=&quot;off&quot;&gt;&lt;div&gt;&lt;input id=&quot;to&quot; name=&quot;to&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;to..&quot; type=&quot;to&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;&lt;input id=&quot;subject&quot; name=&quot;subject&quot; onChange={[Function bound handleOnChange]} placeholder=&quot;subject..&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div /&gt;&lt;br /&gt;&lt;/form&gt;&lt;div&gt;&lt;div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; to=&quot;/inbox&quot;&gt;&lt;button className=&quot;closemail&quot;&gt;x&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn&quot; to=&quot;/composemail&quot;&gt;&lt;button className=&quot;btn-success pull-right composebtn&quot; onClick={[Function bound handleOnSubmit]} type=&quot;submit&quot;&gt;Send&lt;/button&gt;&lt;/NavLink&gt;&lt;NavLink activeClassName=&quot;active&quot; aria-current=&quot;page&quot; className=&quot;composebtn &quot; to=&quot;/draft&quot;&gt;&lt;button className=&quot;btn-success pull-middle composebtn&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;&lt;/NavLink&gt;&lt;/div&gt;&lt;br /&gt;&lt;span className=&quot;error&quot;&gt;All fields are required&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;}, &quot;_renderedNodeType&quot;: 0, &quot;_rootNodeID&quot;: 0, &quot;_topLevelWrapper&quot;: null, &quot;_updateBatchNumber&quot;: null, &quot;_warnedAboutRefsInRender&quot;: false}, &quot;getRenderOutput&quot;: [Function getRenderOutput], &quot;render&quot;: [Function render]}, &quot;root&quot;: [Circular], &quot;unrendered&quot;: &lt;ComposeMail deleteDraftMail={[Function mockConstructor]} storeDraftMail={[Function mockConstructor]} storeSentMail={[Function mockConstructor]} /&gt;}, &quot;unrendered&quot;: null}[39m
+received.length:
+  [31m0[39m
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:75:42)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="without store" name="testing the rendering structure" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toBeTruthy([22m[2m)[22m
+    <testcase classname="ComposeMail Component" name="click compose button" time="0">
+      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
 
-Expected value to be truthy, instead received
-  [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:119:165)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:82:21)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="without store" name="testing delete button" time="0">
+    <testcase classname="simulate click event on onSubmit" name="submit click event" time="0">
+      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
+
+Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:104:21)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="simulate click event on onSubmit" name="submit check error message" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
   [32mtrue[39m
 Received:
   [31mfalse[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:125:61)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:117:49)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="without store" name="testing pagination" time="0">
+    <testcase classname="simulate click event on onSubmit" name="submit check valid state" time="0">
+      <failure message="TypeError: Cannot set property &apos;from&apos; of undefined
+    at ComposeMail.submitValidation (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/components/ComposeMail.js:51:22)
+    at ComposeMail.&lt;anonymous&gt; (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-mock/build/index.js:578:25)
+    at ComposeMail.mockConstructor (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-mock/build/index.js:288:37)
+    at Object.test (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/ComposeMail.spec.js:131:28)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
     </testcase>
-    <testcase classname="without store" name="testing search" time="0">
+    <testcase classname="simulate click event on onSubmit" name="email validation" time="0">
     </testcase>
-    <testcase classname="without store" name="testing sort" time="0">
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="7" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/data.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/data.spec.js" hostname="localhost" tests="3" failures="1" time="0.128" timestamp="2019-12-24T22:44:23">
+    <properties>
+    </properties>
+    <testcase classname="data reducers" name="returns proper initial state" time="0">
+    </testcase>
+    <testcase classname="data reducers" name="RECEIVE_API_DATA" time="0">
+    </testcase>
+    <testcase classname="data reducers" name="DELETE_INBOX_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m&quot;sometwo@nowhere.comDeleteold1/2/2018&quot;[39m
-Received:
-  [31m&quot;someone@nowhere.comDelete&quot;[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:214:3)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="without store" name="simulate delete button click" time="0">
-    </testcase>
-    <testcase classname="without store" name="simulate search text change" time="0">
-    </testcase>
-    <testcase classname="without store" name="simulate dropdown change" time="0">
-    </testcase>
-    <testcase classname="without store" name="simulate next button" time="0">
-    </testcase>
-    <testcase classname="without store" name="simulate prev button" time="0">
-    </testcase>
-    <testcase classname="without store" name="active mail state check " time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m3[39m
-Received:
-  [31m0[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:368:38)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <testcase classname="without store" name="time convertion check " time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;date&quot;: &quot;2/22/2018&quot;, &quot;time&quot;: &quot;11:55:43 PM&quot;}[39m
+  [32m{&quot;data&quot;: [{&quot;id&quot;: 2}]}[39m
 Received:
   [31m{}[39m
 
@@ -941,19 +677,179 @@ Difference:
 [31m+ Received[39m
 
 [32m-Object {[39m
-[32m-  &quot;date&quot;: &quot;2/22/2018&quot;,[39m
-[32m-  &quot;time&quot;: &quot;11:55:43 PM&quot;,[39m
+[32m-  &quot;data&quot;: Array [[39m
+[32m-    Object {[39m
+[32m-      &quot;id&quot;: 2,[39m
+[32m-    },[39m
+[32m-  ],[39m
 [32m-}[39m
 [31m+Object {}[39m
-    at Object.test (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js:374:16)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/data.spec.js:26:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
       </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="8" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/sent.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/sent.spec.js" hostname="localhost" tests="2" failures="2" time="1.76" timestamp="2019-12-24T22:44:22">
+    <properties>
+    </properties>
+    <testcase classname="sent reducers" name="STORE_SENT_MAIL" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;Tue, 24 Dec 2019 22:44:23 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
+Received:
+  [31m[{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}][39m
+
+Difference:
+
+  Comparing two different types of values. Expected [32mobject[39m but received [31marray[39m.
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/sent.spec.js:35:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="sent reducers" name="DELETE_SENT_MAIL" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
+Received:
+  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1001}[39m
+
+Difference:
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[33m@@ -6,8 +6,16 @@
+[39m[2m       &quot;id&quot;: 1000,[22m
+[2m       &quot;subject&quot;: &quot;This is a sent mail&quot;,[22m
+[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
+[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
+[2m     },[22m
+[31m+    Object {[39m
+[31m+      &quot;body&quot;: &quot;Hi to u&quot;,[39m
+[31m+      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[31m+      &quot;id&quot;: 1,[39m
+[31m+      &quot;subject&quot;: &quot;some mail&quot;,[39m
+[31m+      &quot;time&quot;: &quot;&quot;,[39m
+[31m+      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
+[31m+    },[39m
+[2m   ],[22m
+[32m-  &quot;id&quot;: 1002,[39m
+[31m+  &quot;id&quot;: 1001,[39m
+[2m }[22m
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/sent.spec.js:65:5)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="9" name="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js" errors="0" package="/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js" hostname="localhost" tests="3" failures="2" time="3.634" timestamp="2019-12-24T22:44:20">
+    <properties>
+    </properties>
+    <testcase classname="Folders Component" name="Number of NavLink" time="0">
+      <failure message="TypeError: this.props.receiveApiData is not a function
+    at Folders.componentWillMount (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/components/Folders.js:13:16)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:345:23
+    at measureLifeCyclePerf (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:73:12)
+    at ShallowComponentWrapper.performInitialMount (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:344:9)
+    at ShallowComponentWrapper.mountComponent (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:255:21)
+    at Object.mountComponent (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactReconciler.js:43:35)
+    at ReactShallowRenderer._render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:136:23)
+    at _batchedRender (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:83:12)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:58:14)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
+    at ReactShallowRenderer.render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:110:18)
+    at ReactShallowRenderer.render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/react-compat.js:171:37)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:128:26
+    at ReactDefaultBatchingStrategyTransaction.perform (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/Transaction.js:141:20)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:60:26)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
+    at ReactShallowRenderer.unstable_batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:128:25)
+    at performBatchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:103:21)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:127:9
+    at withSetStateAllowed (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/Utils.js:284:3)
+    at new ShallowWrapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:126:38)
+    at shallow (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/shallow.js:19:10)
+    at Object.beforeEach (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js:15:35)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:38:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+      <failure message="TypeError: Cannot read property &apos;find&apos; of undefined
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js:19:20)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Folders Component" name="click compose button" time="0">
+      <failure message="TypeError: this.props.receiveApiData is not a function
+    at Folders.componentWillMount (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/components/Folders.js:13:16)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:345:23
+    at measureLifeCyclePerf (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:73:12)
+    at ShallowComponentWrapper.performInitialMount (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:344:9)
+    at ShallowComponentWrapper.mountComponent (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactCompositeComponent.js:255:21)
+    at Object.mountComponent (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactReconciler.js:43:35)
+    at ReactShallowRenderer._render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:136:23)
+    at _batchedRender (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:83:12)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:58:14)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
+    at ReactShallowRenderer.render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:110:18)
+    at ReactShallowRenderer.render (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/react-compat.js:171:37)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:128:26
+    at ReactDefaultBatchingStrategyTransaction.perform (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/Transaction.js:141:20)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactDefaultBatchingStrategy.js:60:26)
+    at Object.batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactUpdates.js:95:27)
+    at ReactShallowRenderer.unstable_batchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/react-test-renderer/lib/shallow/ReactShallowRenderer.js:128:25)
+    at performBatchedUpdates (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:103:21)
+    at /Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:127:9
+    at withSetStateAllowed (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/Utils.js:284:3)
+    at new ShallowWrapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/ShallowWrapper.js:126:38)
+    at shallow (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/enzyme/build/shallow.js:19:10)
+    at Object.beforeEach (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js:15:35)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:38:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+      <failure message="TypeError: Cannot read property &apos;find&apos; of undefined
+    at Object.it (/Users/tharunkumarkanthasamy/Documents/mail-app-react/src/test/Folders.spec.js:24:32)
+    at Object.asyncFn (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/tharunkumarkanthasamy/Documents/mail-app-react/node_modules/p-map/index.js:46:16)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
     </testcase>
     <system-out/>
     <system-err/>
