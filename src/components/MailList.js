@@ -277,6 +277,7 @@ export class MailList extends React.Component {
             >
               <form className="search-box">
                 <input
+                  onChange={this.handleOnChange}
                   type="text"
                   placeholder="Search.."
                   autoComplete="off"
