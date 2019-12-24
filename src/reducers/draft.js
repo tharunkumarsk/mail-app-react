@@ -20,6 +20,8 @@ export default (state = {}, action) => {
       break;
     case STORE_DRAFT_MAIL:
       var found = false;
+      debugger
+      initialState.data = initialState.data.concat(action.payload)
       for (var i = 0; i < initialState.data.length; i++) {
         if (initialState.data[i].id == action.payload.id) {
           initialState.data[i]=action.payload
@@ -29,7 +31,11 @@ export default (state = {}, action) => {
       }
       if(!found){       }
       
-      return initialState;
+      return {
+        ...state,
+        data: initialState.data
+      };
+      //return initialState;
       break;
     case DELETE_DRAFT_MAIL:
           

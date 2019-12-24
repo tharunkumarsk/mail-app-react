@@ -20,10 +20,10 @@ export default (state = {}, action) => {
       return state;
       break;
     case STORE_SENT_MAIL:
-      debugger
+      initialState.data = initialState.data.concat(action.payload)
       return {
         ...state,
-        data: initialState.data.concat(action.payload)
+        data: initialState.data
       };
       break;
     case DELETE_SENT_MAIL:

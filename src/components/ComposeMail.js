@@ -50,7 +50,7 @@ generateId(){
   submitValidation(composeData) {
     composeData.from = "user@tcs.com"
     composeData.id = this.generateId()
-    this.setState({id:this.generateId()})
+    composeData.time =new Date().toISOString()
     this.props.storeSentMail(composeData);
     if (this.props.compose.data.id) {
       console.log("delete draft");
@@ -58,10 +58,17 @@ generateId(){
     }
   }
 
-  handleOnSave(composeData) {
-    this.props.storeDraftMail(composeData);
+  handleOnSave() {
+    this.submitDraftData(this.state)
   }
+  submitDraftData(composeData){
+    composeData.from = "user@tcs.com"
+    composeData.id = this.generateId()
+   // composeData.time =new Date().toISOString()
 
+    this.props.storeDraftMail(composeData);
+
+  }
   componentDidMount() {
     this.setState({ id: this.props.compose.data.id });
     this.setState({ from: this.props.compose.data.from });
@@ -133,6 +140,7 @@ generateId(){
                 <button
                   type="submit"
                   className="btn-success pull-middle composebtn"
+                  onClick={this.handleOnSave}
                 >
                   Save
                 </button>
