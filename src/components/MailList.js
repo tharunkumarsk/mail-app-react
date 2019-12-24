@@ -91,7 +91,7 @@ export class MailList extends React.Component {
     if (!mails[this.state.startmail + 6]) {
       mail_per_page.islastPage = true;
     }
-    mails = mails.slice(this.state.startmail, this.state.startmail);
+    mails = mails.slice(this.state.startmail, mails.length);
     mail_per_page.mails = mails;
 
     return mail_per_page;
@@ -105,6 +105,7 @@ export class MailList extends React.Component {
   }
 
   componentDidMount() {
+    console.log("componentDidMount", this.props);
     this.props.readSentMail();
     this.props.readDraftMail();
     this.props.readDeleteMail();
@@ -148,7 +149,6 @@ export class MailList extends React.Component {
 
   render() {
     //move to trash
-    console.log("this.props.inboxData", this.props.inboxData);
     var deleted = false;
     newState = Object.assign({}, this.props.inboxData);
     if (
@@ -184,7 +184,10 @@ export class MailList extends React.Component {
     //fetch mail list and mail data
     var data;
     if (this.props.display == "inbox") {
+      //console.log("mail list data ", this.props.store.getState());
+
       results = this.props.data.data;
+      console.log("mail list results ", results);
 
       data = this.props.inboxData;
     } else if (this.props.display == "sent") {
@@ -212,9 +215,9 @@ export class MailList extends React.Component {
       );
       //dropdown sorting
       if (this.state.selectValue == "latest") {
-        filteredList.sort((a, b) => a.time < b.time);
+        filteredList.sort((a, b) => (a.time > b.time ? 1 : -1));
       } else {
-        filteredList.sort((a, b) => a.time > b.time);
+        filteredList.sort((a, b) => (a.time < b.time ? 1 : -1));
       }
       const mail_list_temp = filteredList;
       //rendering list
@@ -277,7 +280,11 @@ export class MailList extends React.Component {
               </form>
 
               <div className="sort-drop-down">
-                <select className="drop-down" value={this.state.selectValue}>
+                <select
+                  className="drop-down"
+                  value={this.state.selectValue}
+                  onChange={this.handleDropdownChange}
+                >
                   <option value="latest">Newest on top</option>
                   <option value="old">Oldest on top</option>
                 </select>
@@ -313,16 +320,13 @@ export class MailList extends React.Component {
   }
 }
 
-function mapStateToProps({ state }) {
-  debugger;
-  return {
-    data: state.data,
-    inboxData: state.inboxMail,
-    sent: state.sent,
-    draft: state.draft,
-    trash: state.trash
-  };
-}
+const mapStateToProps = state => ({
+  data: state.data,
+  inboxData: state.inboxMail,
+  sent: state.sent,
+  draft: state.draft,
+  trash: state.trash
+});
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(

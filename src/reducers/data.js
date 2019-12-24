@@ -7,7 +7,7 @@ export default (state = {}, action) => {
     case RECEIVE_API_DATA:
       return {
         ...state,
-        ...action.payload
+        data: action.payload
       };
 
       break;

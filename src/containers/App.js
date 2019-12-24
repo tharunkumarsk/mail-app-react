@@ -12,23 +12,23 @@ import createSagaMiddleware from "redux-saga";
 import { mySaga, myInbox } from "../sagas/saga.js";
 import reducer from "./../reducers";
 import { Provider } from "react-redux";
+import loggerMiddleware from "../middleWare/logger";
 import { requestApiData, receiveApiData } from "../actions/inbox";
 
 class App extends Component {
-  componentDidMount = () => {
-    debugger;
-    this.props.store.dispatch(requestApiData());
-    this.props.store.dispatch(receiveApiData());
-  };
+  componentDidMount = () => {};
   render() {
     const sagaMiddleware = createSagaMiddleware();
-    let store = createStore(reducer, applyMiddleware(sagaMiddleware));
+    let store = createStore(
+      reducer,
+      applyMiddleware(sagaMiddleware, loggerMiddleware)
+    );
     sagaMiddleware.run(mySaga);
     sagaMiddleware.run(myInbox);
     debugger;
 
     return (
-      <Provider>
+      <Provider store={store}>
         <Router>
           <div>
             <div className="topnav">
