@@ -18,7 +18,7 @@ export class ComposeMail extends React.Component {
       error: false,
       valid: false
     };
- 
+
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleOnSubmit = this.handleOnSubmit.bind(this);
     this.handleOnSave = this.handleOnSave.bind(this);
@@ -34,16 +34,14 @@ export class ComposeMail extends React.Component {
     }
   }
   validateEmail(email) {
-    var re 
+    var re = new RegExp("@tcs.com");
     return re.test(String(email).toLowerCase());
   }
 
   submitValidation() {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
       this.handleOnSubmit(this.state);
-      
     } else {
-      
     }
   }
 
@@ -75,17 +73,13 @@ export class ComposeMail extends React.Component {
   }
 
   render() {
-    
-
     return (
       <div>
         <div className="blur_background" />
         <div className="popup_inner">
           <div className="composemail">
             <form autocomplete="off">
-              <div>
-                
-              </div>
+              <div></div>
               <br />
               <div>
                 <input
@@ -98,9 +92,7 @@ export class ComposeMail extends React.Component {
                 />
               </div>
               <br />
-              <div>
-               
-              </div>
+              <div></div>
               <br />
             </form>
             <div>
@@ -112,7 +104,6 @@ export class ComposeMail extends React.Component {
 
               <NavLink
                 className="composebtn"
-             
                 to={this.state.valid ? "/sent" : "/composemail"}
               >
                 <button
@@ -123,11 +114,7 @@ export class ComposeMail extends React.Component {
                 </button>
               </NavLink>
 
-              <NavLink
-                className="composebtn "
-                to="/draft"
-              
-              >
+              <NavLink className="composebtn " to="/draft">
                 <button
                   type="submit"
                   className="btn-success pull-middle composebtn"
