@@ -25,7 +25,6 @@ class App extends Component {
     );
     sagaMiddleware.run(mySaga);
     sagaMiddleware.run(myInbox);
-    debugger;
 
     return (
       <Provider store={store}>

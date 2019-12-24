@@ -38,6 +38,8 @@ export class MailList extends React.Component {
       startmail: 0
     };
     this.handleMailClick = this.handleMailClick.bind(this);
+    this.handleNextPage = this.handleNextPage.bind(this);
+    this.handlePrePage = this.handlePrePage.bind(this);
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleMailDelete = this.handleMailDelete.bind(this);
     this.handleDropdownChange = this.handleDropdownChange.bind(this);
@@ -79,10 +81,10 @@ export class MailList extends React.Component {
   }
 
   handleNextPage() {
-    this.setState({ startmail: this.state.startmail });
+    this.setState({ startmail: this.state.startmail + 6 });
   }
   handlePrePage() {
-    this.setState({ startmail: this.state.startmail });
+    this.setState({ startmail: this.state.startmail - 6 });
   }
   paginate(mails) {
     var mail_per_page = {};
@@ -91,9 +93,12 @@ export class MailList extends React.Component {
     if (!mails[this.state.startmail + 6]) {
       mail_per_page.islastPage = true;
     }
-    mails = mails.slice(this.state.startmail, mails.length);
+    if (this.state.startmail === 0) {
+      mails = mails.slice(this.state.startmail, 6);
+    } else {
+      mails = mails.slice(this.state.startmail, mails.length);
+    }
     mail_per_page.mails = mails;
-
     return mail_per_page;
   }
 
@@ -298,11 +303,16 @@ export class MailList extends React.Component {
                 <button
                   disabled={this.state.startmail ? false : true}
                   className="previous pull-left"
+                  onClick={this.handlePrePage}
                 >
                   {" "}
                   ❮ Prev{" "}
                 </button>
-                <button disabled={is_last} className="next pull-right">
+                <button
+                  disabled={is_last}
+                  className="next pull-right"
+                  onClick={this.handleNextPage}
+                >
                   Next ❯
                 </button>
               </div>

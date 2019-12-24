@@ -9,7 +9,6 @@ import { requestApiData, receiveApiData } from "../actions/inbox.js";
 
 export class Folders extends React.Component {
   componentWillMount() {
-    debugger;
     this.props.requestApiData();
     this.props.receiveApiData();
   }
@@ -55,7 +54,6 @@ const mapDispatchToProps = dispatch =>
     { storeComposeMail, requestApiData, receiveApiData },
     dispatch
   );
-debugger;
 
 export default connect(null, mapDispatchToProps, null, { pure: false })(
   Folders
