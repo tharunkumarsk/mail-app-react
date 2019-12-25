@@ -113,6 +113,17 @@ generateId(){
                 />
               </div>
               <br />
+              <div>
+                <textarea
+                  type="text"
+                  id="body"
+                  name="body"
+                  placeholder="your message.."
+                  onChange={this.handleOnChange}
+                  value={this.state.body}
+                />
+              </div>
+              <br />
               <div></div>
               <br />
             </form>
