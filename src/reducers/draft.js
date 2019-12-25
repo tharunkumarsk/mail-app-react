@@ -16,7 +16,9 @@ initialState.data = [
 export default (state = {}, action) => {
   switch (action.type) {
     case READ_DRAFT_MAIL:
-      return null;
+     return  {
+        ...state
+      };
       break;
     case STORE_DRAFT_MAIL:
       var found = false;
@@ -35,11 +37,12 @@ export default (state = {}, action) => {
         ...state,
         data: initialState.data
       };
-      //return initialState;
       break;
     case DELETE_DRAFT_MAIL:
-          
-      return initialState;
+      return {
+        ...state,
+        data:state["data"].filter((x) => x.id !== action.payload),
+      };
       break;
 
     case RESTORE_DRAFT_MAIL:
