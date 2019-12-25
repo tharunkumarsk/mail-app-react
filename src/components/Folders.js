@@ -10,7 +10,6 @@ import { requestApiData, receiveApiData } from "../actions/inbox.js";
 export class Folders extends React.Component {
   componentWillMount() {
     this.props.requestApiData();
-    this.props.receiveApiData();
   }
   handleCompose() {}
 
