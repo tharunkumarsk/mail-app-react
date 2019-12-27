@@ -18,7 +18,10 @@ export const fetchInbox = async () => {
 
 const fetchInboxData = async id => {
   try {
-    const response = await fetch("" + id);
+    const response = await fetch(
+      "https://my-json-server.typicode.com/frescoplaylab/React-E2-Json_server/mails/" +
+        id
+    );
     const inboxData = await response.json();
     return inboxData;
   } catch (e) {

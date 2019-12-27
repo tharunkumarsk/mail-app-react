@@ -117,10 +117,10 @@ export class MailList extends React.Component {
   }
   handleMailClick(id) {
     var mailData;
-
+    this.setState({ activeMail: id });
     if (this.props.display == "inbox") {
       this.props.requestInboxData(id);
-
+      console.log("this.props.inboxData", this.props.inboxData);
       return this.props.inboxData;
     } else if (this.props.display == "sent") {
       var mail = this.props.sent.data.map(
@@ -238,7 +238,9 @@ export class MailList extends React.Component {
                 (this.state.activeMail == mail.id ? " active" : "")
               }
               key={mail.id}
-              onClick={() => {}}
+              onClick={() => {
+                this.handleMailClick(mail.id);
+              }}
             >
               <i>{this.props.display == "inbox" ? mail.from : mail.to}</i>
               <button
