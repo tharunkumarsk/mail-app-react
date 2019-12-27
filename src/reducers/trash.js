@@ -15,7 +15,7 @@ initialState.data = [
     folder: "sent",
     folderId: "2",
     time: "2018-01-23T18:25",
-    body: "you can restore this" 
+    body: "you can restore this"
   }
 ];
 
@@ -26,6 +26,7 @@ export default (state = {}, action) => {
       break;
     case STORE_TRASH_MAIL:
       if (action.payload.folder == "inbox") {
+        initialState.data = initialState.data.concat(action.payload);
         var found = false;
         for (var i = 0; i < initialState.data.length; i++) {
           if (
@@ -38,16 +39,19 @@ export default (state = {}, action) => {
           }
         }
         if (!found) {
-          
         }
+        return {
+          ...state,
+          data: initialState.data
+        };
       } else {
-        
-        return initialState;
+        return {
+          ...state,
+          data: initialState.data
+        };
         break;
       }
     case RESTORE_TRASH_MAIL:
-      
-
       return initialState;
       break;
     default:

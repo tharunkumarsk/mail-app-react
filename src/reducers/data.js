@@ -15,7 +15,7 @@ export default (state = {}, action) => {
     case DELETE_INBOX_MAIL:
       return {
         ...state,
-        data:state["data"].filter((x) => x.id !== action.payload),
+        data: state["data"].filter(x => x.id !== action.payload)
       };
       break;
 

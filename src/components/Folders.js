@@ -42,6 +42,13 @@ export class Folders extends React.Component {
           >
             Draft
           </NavLink>
+          <NavLink
+            className="list-group-item"
+            activeClassName="active"
+            to="/trash"
+          >
+            Trash
+          </NavLink>
         </div>
       </div>
     );
