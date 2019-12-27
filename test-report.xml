@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" hostname="localhost" tests="9" failures="5" time="0.762" timestamp="2019-12-27T12:53:53">
+  <testsuite id="0" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/ComposeMail.spec.js" hostname="localhost" tests="9" failures="5" time="2.745" timestamp="2019-12-27T13:23:22">
     <properties>
     </properties>
     <testcase classname="Testing folder component with store store" name="+++ check Prop matches with initialState" time="0">
@@ -111,19 +111,17 @@ Received:
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="1" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" hostname="localhost" tests="7" failures="6" time="0.483" timestamp="2019-12-27T12:53:54">
+  <testsuite id="1" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" hostname="localhost" tests="3" failures="1" time="0.06" timestamp="2019-12-27T13:23:24">
     <properties>
     </properties>
-    <testcase classname="Testing mail component with store store" name="+++ render the connected(SMART) component" time="0">
+    <testcase classname="data reducers" name="returns proper initial state" time="0">
     </testcase>
-    <testcase classname="Testing mail component with store store" name="+++ check action on dispatching " time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toBe([22m[32mexpected[39m[2m)[22m
-
-Expected value to be (using ===):
-  [32m&quot;STORE_COMPOSE_MAIL&quot;[39m
-Received:
-  [31m&quot;&quot;[39m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js:33:32)
+    <testcase classname="data reducers" name="RECEIVE_API_DATA" time="0">
+    </testcase>
+    <testcase classname="data reducers" name="DELETE_INBOX_MAIL" time="0">
+      <failure message="TypeError: Cannot read property &apos;filter&apos; of undefined
+    at Object.&lt;anonymous&gt;.exports.default (/Users/Tharun/Documents/GitHub/mail-app-react/src/reducers/data.js:18:29)
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js:23:31)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -132,6 +130,40 @@ Received:
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
       </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="2" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" hostname="localhost" tests="3" failures="1" time="4.657" timestamp="2019-12-27T13:23:22">
+    <properties>
+    </properties>
+    <testcase classname="Folders Component" name="Number of NavLink" time="0">
+    </testcase>
+    <testcase classname="Folders Component" name="click compose button" time="0">
+      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
+
+Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:26:17)
+    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="3" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Mail.spec.js" hostname="localhost" tests="7" failures="5" time="1.792" timestamp="2019-12-27T13:23:25">
+    <properties>
+    </properties>
+    <testcase classname="Testing mail component with store store" name="+++ render the connected(SMART) component" time="0">
+    </testcase>
+    <testcase classname="Testing mail component with store store" name="+++ check action on dispatching " time="0">
     </testcase>
     <testcase classname="without store" name="submit click event" time="0">
       <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
@@ -225,21 +257,46 @@ Expected value to be truthy, instead received
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="2" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" hostname="localhost" tests="2" failures="2" time="0.034" timestamp="2019-12-27T12:53:55">
+  <testsuite id="4" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" hostname="localhost" tests="4" failures="2" time="0.041" timestamp="2019-12-27T13:23:26">
     <properties>
     </properties>
-    <testcase classname="compose reducers" name="returns proper initial state" time="0">
+    <testcase classname="sent reducers" name="returns proper initial state" time="0">
+    </testcase>
+    <testcase classname="sent reducers" name="READ_TRASH_MAIL" time="0">
+    </testcase>
+    <testcase classname="sent reducers" name="STORE_TRASH_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: {&quot;body&quot;: &quot;&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3002}[39m
 Received:
-  [31mnull[39m
+  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3001}[39m
 
 Difference:
 
-  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:18:51)
+[32m- Expected[39m
+[31m+ Received[39m
+
+[33m@@ -8,17 +8,8 @@
+[39m[2m       &quot;id&quot;: 3000,[22m
+[2m       &quot;subject&quot;: &quot;Trash mail&quot;,[22m
+[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
+[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
+[2m     },[22m
+[32m-    Object {[39m
+[32m-      &quot;body&quot;: &quot;Hi to u&quot;,[39m
+[32m-      &quot;folder&quot;: &quot;sent&quot;,[39m
+[32m-      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[32m-      &quot;id&quot;: 3001,[39m
+[32m-      &quot;subject&quot;: &quot;some mail&quot;,[39m
+[32m-      &quot;time&quot;: &quot;&quot;,[39m
+[32m-      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
+[32m-    },[39m
+[2m   ],[22m
+[32m-  &quot;id&quot;: 3002,[39m
+[31m+  &quot;id&quot;: 3001,[39m
+[2m }[22m
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:46:3)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -249,40 +306,29 @@ Difference:
     at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="compose reducers" name="STORE_COMPOSE_MAIL" time="0">
+    <testcase classname="sent reducers" name="RESTORE_TRASH_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [&quot;sample quote 2&quot;, &quot;sample quote 3&quot;]}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3002}[39m
 Received:
-  [31mnull[39m
+  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3001}[39m
 
 Difference:
 
-  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:27:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="3" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js" hostname="localhost" tests="3" failures="1" time="1.333" timestamp="2019-12-27T12:53:53">
-    <properties>
-    </properties>
-    <testcase classname="Folders Component" name="Number of NavLink" time="0">
-    </testcase>
-    <testcase classname="Folders Component" name="click compose button" time="0">
-      <failure message="Error: [2mexpect([22m[31mjest.fn()[39m[2m).toHaveBeenCalledTimes([22m[32m1[39m[2m)[22m
+[32m- Expected[39m
+[31m+ Received[39m
 
-Expected mock function to have been called [32mone time[39m, but it was called [31mzero times[39m.
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/Folders.spec.js:26:17)
+[33m@@ -9,7 +9,7 @@
+[39m[2m       &quot;subject&quot;: &quot;Trash mail&quot;,[22m
+[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
+[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
+[2m     },[22m
+[2m   ],[22m
+[32m-  &quot;id&quot;: 3002,[39m
+[31m+  &quot;id&quot;: 3001,[39m
+[2m }[22m
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:78:3)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -292,22 +338,46 @@ Expected mock function to have been called [32mone time[39m, but it was called
     at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
-    </testcase>
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="4" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js" hostname="localhost" tests="3" failures="1" time="0.028" timestamp="2019-12-27T12:53:55">
+  <testsuite id="5" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" hostname="localhost" tests="2" failures="1" time="0.045" timestamp="2019-12-27T13:23:26">
     <properties>
     </properties>
-    <testcase classname="data reducers" name="returns proper initial state" time="0">
+    <testcase classname="sent reducers" name="returns proper initial state" time="0">
     </testcase>
-    <testcase classname="data reducers" name="RECEIVE_API_DATA" time="0">
-    </testcase>
-    <testcase classname="data reducers" name="DELETE_INBOX_MAIL" time="0">
-      <failure message="TypeError: Cannot read property &apos;filter&apos; of undefined
-    at Object.&lt;anonymous&gt;.exports.default (/Users/Tharun/Documents/GitHub/mail-app-react/src/reducers/data.js:18:29)
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/data.spec.js:23:31)
+    <testcase classname="sent reducers" name="RECEIVE_INBOX_DATA" time="0">
+      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
+
+Expected value to equal:
+  [32m{&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}[39m
+Received:
+  [31m{&quot;body&quot;: &quot;Hi to u&quot;, &quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}[39m
+
+Difference:
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[33m@@ -1,7 +1,17 @@
+[39m[2m Object {[22m
+[2m   &quot;body&quot;: &quot;Hi to u&quot;,[22m
+[31m+  &quot;data&quot;: Array [[39m
+[31m+    Object {[39m
+[31m+      &quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;,[39m
+[31m+      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[31m+      &quot;id&quot;: 1000,[39m
+[31m+      &quot;subject&quot;: &quot;This is a sent mail&quot;,[39m
+[31m+      &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[39m
+[31m+      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
+[31m+    },[39m
+[31m+  ],[39m
+[2m   &quot;from&quot;: &quot;user@tcs.com&quot;,[22m
+[2m   &quot;id&quot;: 1,[22m
+[2m   &quot;subject&quot;: &quot;some mail&quot;,[22m
+[2m   &quot;time&quot;: &quot;&quot;,[22m
+[2m   &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js:38:5)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -320,7 +390,7 @@ Expected mock function to have been called [32mone time[39m, but it was called
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="5" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" hostname="localhost" tests="14" failures="4" time="1.354" timestamp="2019-12-27T12:53:53">
+  <testsuite id="6" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/MailList.spec.js" hostname="localhost" tests="14" failures="4" time="4.716" timestamp="2019-12-27T13:23:22">
     <properties>
     </properties>
     <testcase classname="Testing folder component with store store" name="+++ render the connected(SMART) component" time="0">
@@ -423,46 +493,21 @@ Difference:
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="6" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js" hostname="localhost" tests="4" failures="2" time="0.048" timestamp="2019-12-27T12:53:55">
+  <testsuite id="7" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js" hostname="localhost" tests="2" failures="2" time="0.038" timestamp="2019-12-27T13:23:26">
     <properties>
     </properties>
-    <testcase classname="sent reducers" name="returns proper initial state" time="0">
-    </testcase>
-    <testcase classname="sent reducers" name="READ_TRASH_MAIL" time="0">
-    </testcase>
-    <testcase classname="sent reducers" name="STORE_TRASH_MAIL" time="0">
+    <testcase classname="compose reducers" name="returns proper initial state" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3002}[39m
+  [32m{&quot;data&quot;: {&quot;body&quot;: &quot;&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
 Received:
-  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3001}[39m
+  [31mnull[39m
 
 Difference:
 
-[32m- Expected[39m
-[31m+ Received[39m
-
-[33m@@ -8,17 +8,8 @@
-[39m[2m       &quot;id&quot;: 3000,[22m
-[2m       &quot;subject&quot;: &quot;Trash mail&quot;,[22m
-[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
-[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-[2m     },[22m
-[32m-    Object {[39m
-[32m-      &quot;body&quot;: &quot;Hi to u&quot;,[39m
-[32m-      &quot;folder&quot;: &quot;sent&quot;,[39m
-[32m-      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
-[32m-      &quot;id&quot;: 3001,[39m
-[32m-      &quot;subject&quot;: &quot;some mail&quot;,[39m
-[32m-      &quot;time&quot;: &quot;&quot;,[39m
-[32m-      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
-[32m-    },[39m
-[2m   ],[22m
-[32m-  &quot;id&quot;: 3002,[39m
-[31m+  &quot;id&quot;: 3001,[39m
-[2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:46:3)
+  Comparing two different types of values. Expected [32mobject[39m but received [31mnull[39m.
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:18:51)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -472,29 +517,36 @@ Difference:
     at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
       </failure>
     </testcase>
-    <testcase classname="sent reducers" name="RESTORE_TRASH_MAIL" time="0">
+    <testcase classname="compose reducers" name="STORE_COMPOSE_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3002}[39m
+  [32m{&quot;data&quot;: [&quot;sample quote 2&quot;, &quot;sample quote 3&quot;]}[39m
 Received:
-  [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can restore this&quot;, &quot;folder&quot;: &quot;sent&quot;, &quot;folderId&quot;: &quot;2&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 3000, &quot;subject&quot;: &quot;Trash mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 3001}[39m
+  [31m{&quot;0&quot;: &quot;sample quote 2&quot;, &quot;1&quot;: &quot;sample quote 3&quot;, &quot;data&quot;: {&quot;body&quot;: &quot;&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: &quot;&quot;, &quot;subject&quot;: &quot;&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;&quot;}}[39m
 
 Difference:
 
 [32m- Expected[39m
 [31m+ Received[39m
 
-[33m@@ -9,7 +9,7 @@
-[39m[2m       &quot;subject&quot;: &quot;Trash mail&quot;,[22m
-[2m       &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[22m
-[2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-[2m     },[22m
-[2m   ],[22m
-[32m-  &quot;id&quot;: 3002,[39m
-[31m+  &quot;id&quot;: 3001,[39m
+[2m Object {[22m
+[32m-  &quot;data&quot;: Array [[39m
+[32m-    &quot;sample quote 2&quot;,[39m
+[32m-    &quot;sample quote 3&quot;,[39m
+[32m-  ],[39m
+[31m+  &quot;0&quot;: &quot;sample quote 2&quot;,[39m
+[31m+  &quot;1&quot;: &quot;sample quote 3&quot;,[39m
+[31m+  &quot;data&quot;: Object {[39m
+[31m+    &quot;body&quot;: &quot;&quot;,[39m
+[31m+    &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
+[31m+    &quot;id&quot;: &quot;&quot;,[39m
+[31m+    &quot;subject&quot;: &quot;&quot;,[39m
+[31m+    &quot;time&quot;: &quot;&quot;,[39m
+[31m+    &quot;to&quot;: &quot;&quot;,[39m
+[31m+  },[39m
 [2m }[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/trash.spec.js:78:3)
+    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/compose.spec.js:27:5)
     at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
     at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
     at new Promise (&lt;anonymous&gt;)
@@ -507,63 +559,14 @@ Difference:
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="7" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js" hostname="localhost" tests="2" failures="1" time="0.029" timestamp="2019-12-27T12:53:55">
-    <properties>
-    </properties>
-    <testcase classname="sent reducers" name="returns proper initial state" time="0">
-    </testcase>
-    <testcase classname="sent reducers" name="RECEIVE_INBOX_DATA" time="0">
-      <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
-
-Expected value to equal:
-  [32m{&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}[39m
-Received:
-  [31m{&quot;body&quot;: &quot;Hi to u&quot;, &quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}[39m
-
-Difference:
-
-[32m- Expected[39m
-[31m+ Received[39m
-
-[33m@@ -1,7 +1,17 @@
-[39m[2m Object {[22m
-[2m   &quot;body&quot;: &quot;Hi to u&quot;,[22m
-[31m+  &quot;data&quot;: Array [[39m
-[31m+    Object {[39m
-[31m+      &quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;,[39m
-[31m+      &quot;from&quot;: &quot;user@tcs.com&quot;,[39m
-[31m+      &quot;id&quot;: 1000,[39m
-[31m+      &quot;subject&quot;: &quot;This is a sent mail&quot;,[39m
-[31m+      &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[39m
-[31m+      &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[39m
-[31m+    },[39m
-[31m+  ],[39m
-[2m   &quot;from&quot;: &quot;user@tcs.com&quot;,[22m
-[2m   &quot;id&quot;: 1,[22m
-[2m   &quot;subject&quot;: &quot;some mail&quot;,[22m
-[2m   &quot;time&quot;: &quot;&quot;,[22m
-[2m   &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
-    at Object.it (/Users/Tharun/Documents/GitHub/mail-app-react/src/test/inboxMail.spec.js:38:5)
-    at Object.asyncFn (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/Users/Tharun/Documents/GitHub/mail-app-react/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
-      </failure>
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="8" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" hostname="localhost" tests="2" failures="2" time="0.034" timestamp="2019-12-27T12:53:55">
+  <testsuite id="8" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/sent.spec.js" hostname="localhost" tests="2" failures="2" time="0.039" timestamp="2019-12-27T13:23:26">
     <properties>
     </properties>
     <testcase classname="sent reducers" name="STORE_SENT_MAIL" time="0">
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1001, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1002}[39m
 Received:
   [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;All your mails that are successfullly sent will be listed here&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1000, &quot;subject&quot;: &quot;This is a sent mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;Hi to u&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 1, &quot;subject&quot;: &quot;some mail&quot;, &quot;time&quot;: &quot;&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 1001}[39m
 
@@ -581,7 +584,7 @@ Difference:
 [32m-      &quot;id&quot;: 1001,[39m
 [31m+      &quot;id&quot;: 1,[39m
 [2m       &quot;subject&quot;: &quot;some mail&quot;,[22m
-[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;,[39m
+[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;,[39m
 [31m+      &quot;time&quot;: &quot;&quot;,[39m
 [2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
 [2m     },[22m
@@ -643,7 +646,7 @@ Difference:
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="9" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" hostname="localhost" tests="4" failures="3" time="0.028" timestamp="2019-12-27T12:53:55">
+  <testsuite id="9" name="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" errors="0" package="/Users/Tharun/Documents/GitHub/mail-app-react/src/test/draft.spec.js" hostname="localhost" tests="4" failures="3" time="0.03" timestamp="2019-12-27T13:23:27">
     <properties>
     </properties>
     <testcase classname="draft reducers" name="READ_DRAFT_MAIL" time="0">
@@ -652,7 +655,7 @@ Difference:
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2002}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2002}[39m
 Received:
   [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2001}[39m
 
@@ -667,7 +670,7 @@ Difference:
 [2m       &quot;from&quot;: &quot;user@tcs.com&quot;,[22m
 [2m       &quot;id&quot;: 2001,[22m
 [2m       &quot;subject&quot;: &quot;Draft mail&quot;,[22m
-[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;,[39m
+[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;,[39m
 [31m+      &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[39m
 [2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
 [2m     },[22m
@@ -721,7 +724,7 @@ Difference:
       <failure message="Error: [2mexpect([22m[31mreceived[39m[2m).toEqual([22m[32mexpected[39m[2m)[22m
 
 Expected value to equal:
-  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2002, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2003}[39m
+  [32m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2002, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2003}[39m
 Received:
   [31m{&quot;data&quot;: [{&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2000, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}, {&quot;body&quot;: &quot;you can edit this&quot;, &quot;from&quot;: &quot;user@tcs.com&quot;, &quot;id&quot;: 2001, &quot;subject&quot;: &quot;Draft mail&quot;, &quot;time&quot;: &quot;2018-01-23T18:25&quot;, &quot;to&quot;: &quot;ievolve@tcs.com&quot;}], &quot;id&quot;: 2001}[39m
 
@@ -739,7 +742,7 @@ Difference:
 [32m-      &quot;id&quot;: 2002,[39m
 [31m+      &quot;id&quot;: 2001,[39m
 [2m       &quot;subject&quot;: &quot;Draft mail&quot;,[22m
-[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 12:53:55 GMT&quot;,[39m
+[32m-      &quot;time&quot;: &quot;Fri, 27 Dec 2019 13:23:27 GMT&quot;,[39m
 [31m+      &quot;time&quot;: &quot;2018-01-23T18:25&quot;,[39m
 [2m       &quot;to&quot;: &quot;ievolve@tcs.com&quot;,[22m
 [2m     },[22m

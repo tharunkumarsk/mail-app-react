@@ -37,9 +37,9 @@ export class ComposeMail extends React.Component {
     var re = new RegExp("@tcs.com");
     return re.test(String(email).toLowerCase());
   }
-generateId(){
-  return Math.random()
-}
+  generateId() {
+    return Math.random();
+  }
   handleOnSubmit() {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
       this.submitValidation(this.state);
@@ -48,9 +48,9 @@ generateId(){
   }
 
   submitValidation(composeData) {
-    composeData.from = "user@tcs.com"
-    composeData.id = this.generateId()
-    composeData.time =new Date().toISOString()
+    composeData.from = "user@tcs.com";
+    composeData.id = this.generateId();
+    composeData.time = new Date().toISOString();
     this.props.storeSentMail(composeData);
     if (this.props.compose.data.id) {
       console.log("delete draft");
@@ -59,15 +59,14 @@ generateId(){
   }
 
   handleOnSave() {
-    this.submitDraftData(this.state)
+    this.submitDraftData(this.state);
   }
-  submitDraftData(composeData){
-    composeData.from = "user@tcs.com"
-    composeData.id = this.generateId()
-   // composeData.time =new Date().toISOString()
+  submitDraftData(composeData) {
+    composeData.from = "user@tcs.com";
+    composeData.id = this.generateId();
+    // composeData.time =new Date().toISOString()
 
     this.props.storeDraftMail(composeData);
-
   }
   componentDidMount() {
     this.setState({ id: this.props.compose.data.id });
@@ -91,16 +90,16 @@ generateId(){
         <div className="popup_inner">
           <div className="composemail">
             <form autoComplete="off">
-              <div> 
+              <div>
                 <input
-                  type="to"
+                  type="text"
                   id="to"
                   name="to"
                   placeholder="to.."
                   onChange={this.handleOnChange}
-                  value={this.state.to}
+                  value={this.state.to || ""}
                 />
-                </div>
+              </div>
               <br />
               <div>
                 <input
@@ -109,7 +108,7 @@ generateId(){
                   name="subject"
                   placeholder="subject.."
                   onChange={this.handleOnChange}
-                  value={this.state.subject}
+                  value={this.state.subject || ""}
                 />
               </div>
               <br />
@@ -120,7 +119,7 @@ generateId(){
                   name="body"
                   placeholder="your message.."
                   onChange={this.handleOnChange}
-                  value={this.state.body}
+                  value={this.state.body || ""}
                 />
               </div>
               <br />
@@ -141,7 +140,7 @@ generateId(){
                 <button
                   type="submit"
                   className="btn-success pull-right composebtn"
-                  onClick = {this.handleOnSubmit}
+                  onClick={this.handleOnSubmit}
                 >
                   Send
                 </button>

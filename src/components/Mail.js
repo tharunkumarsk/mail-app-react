@@ -86,8 +86,17 @@ export class Mail extends React.Component {
     }
     return (
       <div>
-        {/*<a className="card-link" href="#">&lt;--&nbsp;Reply</a>
-          <a className="card-link pull-right" href="#">--&gt; Forward</a>*/}
+        {this.props.mail !== 0 && (
+          <div>
+            <a className="card-link" href="#" onClick={this.handleCompose}>
+              &lt;--&nbsp;Reply
+            </a>
+            <a className="card-link pull-right" href="#">
+              --&gt; Forward
+            </a>
+          </div>
+        )}
+
         <div className="col-lg-4 col-sm-4 col-xs-4 text-alg-center mailbodycontainer">
           <div className="viewMail">{mailbody}</div>
         </div>
