@@ -236,6 +236,7 @@ export class MailList extends React.Component {
       //rendering list
       var mail_list_per_page = this.paginate(mail_list_temp);
       var is_last = mail_list_per_page.islastPage;
+    console.log(mail_list_temp.length)
       mail_list = mail_list_per_page.mails.map(
         function(mail) {
           return (
@@ -265,6 +266,8 @@ export class MailList extends React.Component {
               <i className="time pull-right">
                 {this.converttime(mail.time).date}
               </i>
+              <h5>Hey</h5>
+            <h5>Hey Hey</h5> 
             </a>
           );
         }.bind(this)
