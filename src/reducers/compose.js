@@ -14,16 +14,15 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case STORE_COMPOSE_MAIL:
       if (action.payload) {
-        return {
-          ...state,
-          ...action.payload
-        };
+        let compose = {};
+        compose.data= action.payload
+        return compose;
       } else {
         return {
           ...state
         };
       }
     default:
-      return null;
+      return state;
   }
 };
