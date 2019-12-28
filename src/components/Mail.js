@@ -25,10 +25,10 @@ export class Mail extends React.Component {
     var day = currentTime.getDate();
     var year = currentTime.getFullYear();
     var date = month + "/" + day + "/" + year;
-    var hours = currentTime.getHours();
+    var hours = currentTime.getHours()-1;
     var minutes = currentTime.getMinutes();
     var seconds = currentTime.getSeconds();
-    var ampm = hours >= 12 ? 'pm' : 'am';
+    var ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
@@ -46,7 +46,7 @@ export class Mail extends React.Component {
       var mailbody = (
         <div className="emptymail">
           <p>
-            <strong></strong>
+          <strong>Select a mail to read.</strong>
           </p>
         </div>
       );
@@ -92,7 +92,7 @@ export class Mail extends React.Component {
           <NavLink className="composebtn" to="/composemail" onClick={this.handleCompose}>
             <button
               type="submit"
-              className={"" + (this.props.folder == "draft" ? "" : " visible")}
+              className={"btn-success pull-right composebtn" + (this.props.folder == "draft" ? "" : " visible")}
             >
               Edit
             </button>
