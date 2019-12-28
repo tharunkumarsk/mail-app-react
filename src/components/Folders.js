@@ -16,7 +16,7 @@ export class Folders extends React.Component {
   render() {
     return (
       <div className="folders vl">
-        <NavLink className="composebtn outer" to="/composemail">
+        <NavLink className="composebtn outer" to="/composemail"  onClick = {() => this.handleCompose()}>
           <button className="btn composebtn">Compose</button>
         </NavLink>
         <div className="list-group">
