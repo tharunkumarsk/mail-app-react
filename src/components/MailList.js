@@ -52,7 +52,23 @@ export class MailList extends React.Component {
   }
 
   converttime(time) {
-    var data = {};
+    var currentTime = new Date(time).toLocaleString("en-US", {timeZone: "Asia/Kolkata"}).split(",")
+    // var month = currentTime.getMonth() + 1;
+    // var day = currentTime.getDate();
+    // var year = currentTime.getFullYear();
+    // var date = month + "/" + day + "/" + year;
+    // var hours = currentTime.getHours();
+    // var minutes = currentTime.getMinutes();
+    // var seconds = currentTime.getSeconds();
+    // var ampm = hours >= 12 ? 'PM' : 'AM';
+    // hours = hours % 12;
+    // hours = hours ? hours : 12; // the hour '0' should be '12'
+    // minutes = minutes < 10 ? '0'+minutes : minutes;
+    // var time = hours + ":" + minutes + ":" + seconds+ ' ' + ampm;
+    var data = {
+      date:currentTime[0],
+      time:currentTime[1].trim()
+    };
 
     return data;
   }
@@ -212,9 +228,9 @@ export class MailList extends React.Component {
       );
       //dropdown sorting
       if (this.state.selectValue == "latest") {
-        filteredList.sort((a, b) => (a.time > b.time ? 1 : -1));
-      } else {
         filteredList.sort((a, b) => (a.time < b.time ? 1 : -1));
+      } else {
+        filteredList.sort((a, b) => (a.time > b.time ? 1 : -1));
       }
       const mail_list_temp = filteredList;
       //rendering list
@@ -237,13 +253,13 @@ export class MailList extends React.Component {
               <button
                 type="button"
                 className={
-                  "" + (this.props.display == "trash" ? " restore" : "")
+                  "delete-button pull-right" + (this.props.display == "trash" ? " restore" : "")
                 }
                 onClick={() => {
                   this.handleMailDelete(mail.id);
                 }}
               >
-                {this.props.display == "trash" ? "Restore" : "Delete"}
+                {this.props.display == "trash" ? "Restore" : "Deleteold"}
               </button>
 
               <i className="time pull-right">
