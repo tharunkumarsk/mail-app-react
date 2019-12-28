@@ -15,7 +15,7 @@ initialState.data = [
     folder: "sent",
     folderId: "2",
     time: "2018-01-23T18:25",
-    body: "you can restore this"
+    body: "you can restore this" 
   }
 ];
 
@@ -25,33 +25,42 @@ export default (state = {}, action) => {
       return initialState;
       break;
     case STORE_TRASH_MAIL:
+      console.log("paylod info",action.payload)
+
       if (action.payload.folder == "inbox") {
-        initialState.data = initialState.data.concat(action.payload);
         var found = false;
         for (var i = 0; i < initialState.data.length; i++) {
           if (
             initialState.data[i].folderId == action.payload.folderId &&
             initialState.data[i].folder == "inbox"
           ) {
+            console.log("in side if")
             found = true;
             console.log(initialState.data[i].folderId);
             break;
           }
         }
         if (!found) {
+           console.log("in else")
+          // initialState.id += 1
+          // return initialState
+          var temp  = action.payload;
+          temp.id = initialState.id;
+          initialState.data.push(temp);
+          initialState.id+=1;
+          return initialState; 
         }
-        return {
-          ...state,
-          data: initialState.data
-        };
       } else {
-        return {
-          ...state,
-          data: initialState.data
-        };
-        break;
+        console.log("not in inbox")
+         var temp  = action.payload;
+        temp.id = initialState.id;
+        initialState.data.push(temp);
+        initialState.id+=1;
+        return initialState; 
       }
+      break;
     case RESTORE_TRASH_MAIL:
+      initialState.data = initialState.data.filter(x => x.id !== action.payload);
       return initialState;
       break;
     default:

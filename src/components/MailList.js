@@ -64,7 +64,7 @@ export class MailList extends React.Component {
   }
 
   handleMailDelete(id) {
-    //this.handleMailClick(id);
+    this.handleMailClick(id);
     if (this.props.display == "inbox") {
       this.props.deleteApiData(id);
     }
@@ -117,9 +117,9 @@ export class MailList extends React.Component {
   }
   handleMailClick(id) {
     var mailData;
-    this.setState({ activeMail: id });
     if (this.props.display == "inbox") {
       this.props.requestInboxData(id);
+      this.setState({ activeMail: id });
       console.log("this.props.inboxData", this.props.inboxData);
       return this.props.inboxData;
     } else if (this.props.display == "sent") {
