@@ -44,6 +44,7 @@ export class ComposeMail extends React.Component {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
       this.submitValidation(this.state);
     } else {
+      this.setState({ valid: false });
     }
   }
 
