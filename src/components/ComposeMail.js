@@ -21,6 +21,7 @@ export class ComposeMail extends React.Component {
 
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleOnSubmit = this.handleOnSubmit.bind(this);
+    //this.submitValidation = this.submitValidation.bind(this);
     this.handleOnSave = this.handleOnSave.bind(this);
   }
 
@@ -30,7 +31,9 @@ export class ComposeMail extends React.Component {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
       this.setState({ valid: true });
     } else {
-      this.setState({ valid: false });
+      this.setState({
+        valid: false,
+      });
     }
   }
   validateEmail(email) {
@@ -40,15 +43,19 @@ export class ComposeMail extends React.Component {
   generateId() {
     return Math.random();
   }
-  handleOnSubmit() {
+  submitValidation() {
     if (this.state.to !== "" && this.validateEmail(this.state.to)) {
-      this.submitValidation(this.state);
+      this.handleOnSubmit(this.state);
     } else {
-      this.setState({ valid: false });
+      this.setState({ 
+        valid: false ,
+        error:true
+
+      });
     }
   }
 
-  submitValidation(composeData) {
+  handleOnSubmit(composeData) {
     composeData.from = "user@tcs.com";
     composeData.id = this.generateId();
     composeData.time = new Date().toISOString();
@@ -136,29 +143,29 @@ export class ComposeMail extends React.Component {
 
               <NavLink
                 className="composebtn"
+                onClick = {() => this.submitValidation()}
                 to={this.state.valid ? "/sent" : "/composemail"}
               >
                 <button
                   type="submit"
                   className="btn-success pull-right composebtn"
-                  onClick={this.handleOnSubmit}
                 >
                   Send
                 </button>
               </NavLink>
 
-              <NavLink className="composebtn " to="/draft">
+              <NavLink className="composebtn " to="/draft" onClick={this.handleOnSave}>
+                
                 <button
                   type="submit"
                   className="btn-success pull-middle composebtn"
-                  onClick={this.handleOnSave}
                 >
                   Save
                 </button>
               </NavLink>
             </div>
             <br />
-            <span className={"error" + (this.state.error ? "" : "")}>
+            <span className={"error " + (this.state.error ? "" : "invisible")}>
               All fields are required
             </span>
           </div>
@@ -169,7 +176,7 @@ export class ComposeMail extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  compose: state
+  ...state
 });
 
 const mapDispatchToProps = dispatch =>
