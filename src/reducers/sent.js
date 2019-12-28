@@ -20,14 +20,16 @@ export default (state = {}, action) => {
       return state;
       break;
     case STORE_SENT_MAIL:
-      initialState.data = initialState.data.concat(action.payload)
-      return {
-        ...state,
-        data: initialState.data
-      };
+      var temp  = action.payload;
+      temp.id = initialState.id;
+      initialState.id+= 1
+      temp.time = new Date().toUTCString();
+      initialState.data.push(temp);
+      return initialState; 
       break;
-    case DELETE_SENT_MAIL:
-        
+    case DELETE_SENT_MAIL:  
+     initialState.id = action.payload+1;
+      initialState.data = initialState.data.filter(x => x.id !== action.payload);
       return initialState;
       break; 
     default:
