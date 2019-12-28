@@ -61,7 +61,6 @@ export class ComposeMail extends React.Component {
     composeData.time = new Date().toISOString();
     this.props.storeSentMail(composeData);
     if (this.props.compose.data.id) {
-      console.log("delete draft");
       this.props.deleteDraftMail(this.props.compose.data.id);
     }
   }

@@ -110,7 +110,6 @@ export class MailList extends React.Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount", this.props);
     this.props.readSentMail();
     this.props.readDraftMail();
     this.props.readDeleteMail();
@@ -120,7 +119,6 @@ export class MailList extends React.Component {
     if (this.props.display == "inbox") {
       this.props.requestInboxData(id);
       this.setState({ activeMail: id });
-      console.log("this.props.inboxData", this.props.inboxData);
       return this.props.inboxData;
     } else if (this.props.display == "sent") {
       var mail = this.props.sent.data.map(
@@ -161,7 +159,6 @@ export class MailList extends React.Component {
       this.state.deleteid == this.state.mailData.id
     ) {
       if (this.props.display == "inbox") {
-        console.log(newState);
         this.moveToDelete(newState, this.props.display);
       } else if (
         this.props.display == "sent" ||
@@ -171,11 +168,9 @@ export class MailList extends React.Component {
         this.moveToDelete(newState, this.props.display);
       } else if (this.props.display == "trash") {
         var newState = Object.assign({}, this.state.mailData);
-        console.log(newState);
         if (newState.folder == "inbox") {
           newState.id = newState.folderId;
           this.props.data.data.push(newState);
-          console.log(this.props.data.data);
         } else if (newState.folder == "sent") {
           this.props.storeSentMail(newState);
         } else if (newState.folder == "draft") {
@@ -189,14 +184,10 @@ export class MailList extends React.Component {
     //fetch mail list and mail data
     var data;
     if (this.props.display == "inbox") {
-      //console.log("mail list data ", this.props.store.getState());
-
       results = this.props.data.data;
-      console.log("mail list results ", results);
 
       data = this.props.inboxData;
     } else if (this.props.display == "sent") {
-      debugger;
       results = this.props.sent.data;
       data = this.state.mailData;
     } else if (this.props.display == "draft") {

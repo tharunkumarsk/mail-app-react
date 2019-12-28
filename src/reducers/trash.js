@@ -25,7 +25,6 @@ export default (state = {}, action) => {
       return initialState;
       break;
     case STORE_TRASH_MAIL:
-      console.log("paylod info",action.payload)
 
       if (action.payload.folder == "inbox") {
         var found = false;
@@ -34,16 +33,11 @@ export default (state = {}, action) => {
             initialState.data[i].folderId == action.payload.folderId &&
             initialState.data[i].folder == "inbox"
           ) {
-            console.log("in side if")
             found = true;
-            console.log(initialState.data[i].folderId);
             break;
           }
         }
         if (!found) {
-           console.log("in else")
-          // initialState.id += 1
-          // return initialState
           var temp  = action.payload;
           temp.id = initialState.id;
           initialState.data.push(temp);
@@ -51,7 +45,6 @@ export default (state = {}, action) => {
           return initialState; 
         }
       } else {
-        console.log("not in inbox")
          var temp  = action.payload;
         temp.id = initialState.id;
         initialState.data.push(temp);
