@@ -27,7 +27,6 @@ export default (state = {}, action) => {
       break;
     case STORE_DRAFT_MAIL:
       var found = false;
-      initialState.data = initialState.data.concat(action.payload);
       for (var i = 0; i < initialState.data.length; i++) {
         if (initialState.data[i].id == action.payload.id) {
           initialState.data[i] = action.payload;
@@ -36,6 +35,12 @@ export default (state = {}, action) => {
         }
       }
       if (!found) {
+        var temp  = action.payload;
+          temp.id = initialState.id;
+          temp.time = new Date().toUTCString();
+          initialState.data.push(temp);
+          initialState.id+=1;
+          return initialState; 
       }
 
       return {
@@ -46,11 +51,15 @@ export default (state = {}, action) => {
     case DELETE_DRAFT_MAIL:
       return {
         ...state,
-        data: state["data"].filter(x => x.id !== action.payload)
+        data: state["data"].filter(x => x.id !== action.payload),
+        id:state["id"]+1
       };
       break;
 
     case RESTORE_DRAFT_MAIL:
+      initialState.data = initialState.data.filter(x => x.id !== action.payload);
+      initialState.id+=1
+      initialState.data[1].id+=1
       return initialState;
       break;
     default:
