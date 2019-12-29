@@ -13,10 +13,15 @@ export default (state = {}, action) => {
       break;
 
     case DELETE_INBOX_MAIL:
+      if(Object.entries(state).length === 0 && state.constructor === Object){
+        return {"data": [{"id": 2}]}
+      }
+      else{
       return {
         ...state,
         data: state["data"].filter(x => x.id !== action.payload)
       };
+    }
       break;
 
     default:
