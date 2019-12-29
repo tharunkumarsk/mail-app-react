@@ -239,7 +239,7 @@ export class MailList extends React.Component {
       mail_list = mail_list_per_page.mails.map(
         function(mail) {
           return (
-            <div>
+            <div  key={mail.id}>
             <a
               className={
                 "list-group-item" +
